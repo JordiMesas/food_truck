@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.85em;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 1.2em;
+  }
+}
+body .main__content {
+  width: 85%;
+  margin: auto auto;
+}
+body .header__h1, body .main__h2, body .main__h3, body .main__h4 {
+  font-family: "Lora", serif;
+  font-size: 1.4em;
+}
+body .main__p, body .header__p {
+  font-weight: bold;
+}
+body .header__p, body .main__p, body .main__li {
+  font-size: 14.5px;
+}
+@media (min-width: 1024px) {
+  body .header__p, body .main__p, body .main__li {
+    font-size: 1em;
+  }
+}
+body .nav__li, body .main__li {
+  list-style: none;
+}
+body .nav__a, body .footer__a {
+  text-decoration: none;
+}
+body .nav_img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+body i {
+  color: black;
+}
+
+.header {
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 152vh;
+}
+@media (min-width: 1024px) {
+  .header {
+    height: 625px;
+  }
+}
+.header .header__content {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
