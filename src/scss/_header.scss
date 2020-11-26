@@ -1,19 +1,35 @@
 @import './variables.scss';
 @import './mixins';
 
-.header {	
+.header {
 	background-image: url('../img/background.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: $center top;
-	height: 152vh;	    	
-	@media (min-width: 1024px) {
-		height: 625px;
-	}
-	.header__content{
-		background-color: black;
-		color: white;				
-		text-align: $center;
-		padding: 10px 0;		
+	background-position: $center bottom;
+	height: 87vh;
+	.header__content {
+		height: 50vh;
+		@include modelFlexColumn;
+		.header__content--backgroundColor {
+			width: 100%;
+			background-color: black;
+			color: white;
+			text-align: $center;
+			padding: 10px 0;
+		}
+
+		.header__a {
+			padding: 20px 25px;
+			background-color: #FFDE00;
+			border: 3.5px solid black;						
+			color: white;
+			font-size: 2.5em;
+			border-radius: 5px;
+			&:hover {
+				border: 5px solid #FFDE00;
+				background-color: transparent;
+				color: #FFDE00;
+			}
+		}
 	}
 }

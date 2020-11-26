@@ -17,30 +17,30 @@ body{
         font-size: $body_size_t;
      }   
     .main__content{       
-       width:  85%;
-       margin: auto auto;        
+       padding:  15px;
+       margin: 0 3%;        
     }
     
-    .header__h1,.main__h2,.main__h3,.main__h4{
+    h1,h2,h3,h4{
         font-family: 'Lora', serif;
         font-size: $title-size;                
     }
-    .main__p,.header__p{
+    p,a{
         font-weight: $bold;       
     }
-    .header__p,.main__p,.main__li{       
+    p,li,a{       
         font-size: 14.5px;
         @media (min-width: 1024px) {
             font-size: 1em;			
         }
     }
-    .nav__li,.main__li{
+    li{
         list-style: none;        
     }
-    .nav__a, .footer__a{
+    a{
         text-decoration: none;        
     }
-    .nav_img{        
+    img{        
         max-width: $max-width;
         border-radius: $border-radius;        
     }
