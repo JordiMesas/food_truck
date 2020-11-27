@@ -62,13 +62,8 @@ body i {
 }
 @media (min-width: 1024px) {
   .header {
-    background-size: 600px;
+    background-size: 697px;
     background-position: top center;
-  }
-}
-@media (min-width: 1440px) {
-  .header {
-    background-size: 855px;
   }
 }
 .header .header__content {
