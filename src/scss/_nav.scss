@@ -1,6 +1,23 @@
 @import './variables.scss';
 @import './mixins';
 
-.nav{
-    background-color: black;
+.nav {	
+	background-color: black;
+	.nav__content {
+        @include modelFlexRow;	
+		margin: 0 3%;
+        .nav__img {
+            width: 7.5%;
+        }
+        .nav__ul {
+            width: 70%;
+            @include modelFlexRow;
+            .nav__a{
+                color:  #FFDE00;                
+                &:hover{
+                   border-bottom: 4px solid #FFDE00;
+                }
+            }
+        }
+	}
 }

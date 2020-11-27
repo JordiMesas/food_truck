@@ -50,7 +50,7 @@
 
 ///Layout model flexbox
 ///@group mixin
-@mixin modelFlexRow {	
+@mixin modelFlexRow{	
 	display: $flex;
 	flex-direction: $row;
 	justify-content: $space-between;

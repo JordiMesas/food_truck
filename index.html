@@ -12,19 +12,24 @@
 <body>
     <header class="header">
         <!-- background-->
-        <div class="header__content ">
-            <h1 class="header__h1">FOOD TRUCK MEXICO</h1>
-            <p class="header__p">Telefono: 667320036</p>
+        <div class="header__content">
+            <div class="header__content--backgroundColor">
+                <h1 class="header__h1">FOOD TRUCK MEXICANO</h1>
+                <p class="header__p">Telefono: 667320036</p>
+            </div>
+            <a class="header__a" href="#carta">Carta</a>
         </div>
     </header>
     <nav class="nav">
-        <img class="nav_img" src="src/img/logo.png" alt="">
-        <ul class="nav__ul">
-            <li class="nav__li"><a class="nav__a" href="#">Inicio</a></li>
-            <li class="nav__li"><a class="nav__a" href="#">Menu</a></li>
-            <li class="nav__li"><a class="nav__a" href="#">Carta</a></li>
-            <li class="nav__li"><a class="nav__a" href="#">Contacto</a></li>
-        </ul>
+        <div class="nav__content">
+            <img class="nav__img" src="src/img/logo.png" alt="">
+            <ul class="nav__ul">
+                <li class="nav__li"><a class="nav__a" href="#">Inicio</a></li>
+                <li class="nav__li"><a class="nav__a" href="#">Menu</a></li>
+                <li class="nav__li"><a class="nav__a" href="#">Carta</a></li>
+                <li class="nav__li"><a class="nav__a" href="#">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main class="main">
@@ -67,7 +72,7 @@
             </section>
             <!--Carta-->
             <section class="main__section">
-                <table class="main__table">
+                <table id="carta" class="main__table">
                     <thead class="main__thead">
                         <tr class="main__tr">
                             <th class="main__th" colspan="4">
@@ -114,11 +119,11 @@
 
     <footer class="footer">
         <!-- mapa -->
-        <div class="footer__content">
+        <!-- <div class="footer__content">
             <iframe class="footer__iframe"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47905.8125513391!2d2.1088718588378375!3d41.3716234074086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a499f318695789%3A0xe63c457ea2375e4e!2sJacqueline&#39;s%20Restaurant%20by%20TMC!5e0!3m2!1sca!2ses!4v1606218060984!5m2!1sca!2ses"
                 width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
+        </div> -->
         <!-- redes sociales -->
         <div class="footer__content">
             <a class="footer_a" href="https://www.facebook.com/" target="_blanc"><i class="fab fa-facebook"></i></a>

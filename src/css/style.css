@@ -15,31 +15,31 @@ body {
   }
 }
 body .main__content {
-  width: 85%;
-  margin: auto auto;
+  padding: 15px;
+  margin: 0 3%;
 }
-body .header__h1, body .main__h2, body .main__h3, body .main__h4 {
+body h1, body h2, body h3, body h4 {
   font-family: "Lora", serif;
   font-size: 1.4em;
 }
-body .main__p, body .header__p {
+body p, body a {
   font-weight: bold;
 }
-body .header__p, body .main__p, body .main__li {
+body p, body li, body a {
   font-size: 14.5px;
 }
 @media (min-width: 1024px) {
-  body .header__p, body .main__p, body .main__li {
+  body p, body li, body a {
     font-size: 1em;
   }
 }
-body .nav__li, body .main__li {
+body li {
   list-style: none;
 }
-body .nav__a, body .footer__a {
+body a {
   text-decoration: none;
 }
-body .nav_img {
+body img {
   max-width: 100%;
   border-radius: 5px;
 }
@@ -50,20 +50,74 @@ body i {
 .header {
   background-image: url("../img/background.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  height: 152vh;
+  background-size: 395px;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 89vh;
 }
 @media (min-width: 1024px) {
   .header {
-    height: 625px;
+    background-size: 600px;
+  }
+}
+@media (min-width: 1440px) {
+  .header {
+    background-size: 855px;
   }
 }
 .header .header__content {
+  height: 29vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__content .header__content--backgroundColor {
+  width: 100%;
   background-color: black;
   color: white;
   text-align: center;
   padding: 10px 0;
+}
+.header .header__content .header__a {
+  padding: 20px 25px;
+  background-color: #FFDE00;
+  border: 5px solid black;
+  color: white;
+  font-size: 1.8em;
+  border-radius: 5px;
+}
+.header .header__content .header__a:hover {
+  border: 5px solid #FFDE00;
+  background-color: transparent;
+  color: #FFDE00;
+}
+
+.nav {
+  background-color: black;
+}
+.nav .nav__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 3%;
+}
+.nav .nav__content .nav__img {
+  width: 7.5%;
+}
+.nav .nav__content .nav__ul {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .nav__content .nav__ul .nav__a {
+  color: #FFDE00;
+}
+.nav .nav__content .nav__ul .nav__a:hover {
+  border-bottom: 4px solid #FFDE00;
 }
 
 /*# sourceMappingURL=style.css.map */
