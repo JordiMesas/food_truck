@@ -10,15 +10,19 @@
 	background-position: center center;
 	height: 89vh;
 
+	@media (min-width: 768px) { 
+		background-size: 500px;
+	}
 	@media (min-width: 1024px) { 
 		background-size: 600px;
+		background-position: top center;
 	}
 	@media (min-width: 1440px) { 
 		background-size: 855px;
 	}
 
 	.header__content {
-		height: 29vh;
+		height: 33vh;
 		
 		@include modelFlexColumn;
 		.header__content--backgroundColor {
