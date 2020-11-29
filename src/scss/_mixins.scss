@@ -9,9 +9,9 @@
 
 /// mixin used to draw a hamburger
 ///@group mixin
-@mixin hamburguer {
-	width: 30px;
-	height: 25px;
+@mixin hamburguer {	
+	width: 43px;
+	height: 31px;
 	padding: 3px;
 	display: $flex;
 	flex-direction: $column;
@@ -31,7 +31,7 @@
 
 ///@group mixin
 @mixin hideMin1024px {
-	@media (min-width: 1024px) {
+	@media (min-width: 768px) {
 		display: none;
 	}
 }
@@ -68,6 +68,6 @@
 /// @group layout
 
 @mixin socialNet {
-	font-size: 2em;
-	padding-left: 10px;
+	font-size: 1.5em;
+	padding-left: 10px;	
 }

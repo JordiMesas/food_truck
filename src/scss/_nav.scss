@@ -2,9 +2,16 @@
 @import './mixins';
 
 .nav {	
-	background-color: black;
+    background-color: black;
+    display: $flex;  
+    justify-content: $center;  
 	.nav__content {
-        @include modelFlexRow;	
+        width: $width100;
+        display: none;        
+        @media (min-width: 768px) {
+            display: block;            
+            @include modelFlexRow;            	
+        }
 		margin: 0 3%;
         .nav__img {
             width: 7.5%;
@@ -13,11 +20,16 @@
             width: 70%;
             @include modelFlexRow;
             .nav__a{
-                color:  #FFDE00;                
+                color:  $color-yellow;                
                 &:hover{
-                   border-bottom: 4px solid #FFDE00;
+                   border-bottom: 4px solid $color-yellow;
                 }
             }
         }
-	}
+    }
+    .nav__hamburguerWhite{
+        margin: 4% 0;
+        @include hideMin1024px;
+        @include hamburguer;
+    }
 }

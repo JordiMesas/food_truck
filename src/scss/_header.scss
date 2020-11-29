@@ -7,7 +7,7 @@
 	
 	background-size: 395px;
 	background-attachment: fixed;
-	background-position: center center;
+	background-position: $center $center;
 	height: 89vh;
 
 	@media (min-width: 768px) { 
@@ -15,33 +15,33 @@
 	}
 	@media (min-width: 1024px) { 
 		background-size: 697px;
-		background-position: top center;
+		background-position: top $center;
 	}	
 
 	.header__content {
-		height: 33vh;
-		
+		height: 33vh;		
 		@include modelFlexColumn;
-		.header__content--backgroundColor {
-			width: 100%;
-			background-color: black;
-			color: white;
+		.header__backgroundColor{
+			width: $width100;
 			text-align: $center;
 			padding: 10px 0;
 		}
-
+		.header__backgroundColor--color {
+			background-color: $color-black;
+			color: $color-white;
+		}
 		.header__a {
 			padding: 20px 25px;
-			background-color: #FFDE00;
-			border: 5px solid black;						
-			color: white;
+			background-color: $color-yellow ;
+			border: 5px solid $color-black;						
+			color: $color-white;
 			font-size: 1.5em;
-			border-radius: 5px;
+			border-radius: $border-radius;
 			
 			&:hover {
-				border: 5px solid #FFDE00;
+				border: 5px solid $color-yellow ;
 				background-color: transparent;
-				color: #FFDE00;
+				color: $color-yellow ;
 			}
 		}
 	}

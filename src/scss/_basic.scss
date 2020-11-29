@@ -15,22 +15,18 @@ body{
     font-size: $body-size-s;
     @media (min-width: 768px) {
         font-size: $body_size_t;
-     }   
-    .main__content{       
-       padding:  15px;
-       margin: 0 3%;        
-    }
+     }  
     
     h1,h2,h3,h4{
         font-family: 'Lora', serif;
         font-size: $title-size;                
     }
     p,a{
-        font-weight: $bold;       
+        font-weight: $bold;              
     }
     p,li,a{       
         font-size: 14.5px;
-        @media (min-width: 1024px) {
+        @media (min-width: 768px) {
             font-size: 1em;			
         }
     }
@@ -44,8 +40,5 @@ body{
         max-width: $max-width;
         border-radius: $border-radius;        
     }
-    i{
-        color: black;
-        
-    }
+   
 }

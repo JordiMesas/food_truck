@@ -13,7 +13,7 @@
     <header class="header">
         <!-- background-->
         <div class="header__content">
-            <div class="header__content--backgroundColor">
+            <div class="header__backgroundColor header__backgroundColor--color">
                 <h1 class="header__h1">FOOD TRUCK MEXICANO</h1>
                 <p class="header__p">Telefono: 667320036</p>
             </div>
@@ -30,6 +30,11 @@
                 <li class="nav__li"><a class="nav__a" href="#">Contacto</a></li>
             </ul>
         </div>
+        <div class="nav__hamburguerWhite">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </nav>
 
     <main class="main">
@@ -37,79 +42,79 @@
         <div class="main__content">
             <section class="main__section">
                 <h2 class="main__h2">GALERIA DE FOTOS</h2>
-                <img class="main__img" src="" alt="">
+                <img class="main__img" src="./src/img/camaron.png" alt="">
             </section>
             <!--Menu-->
             <section class="main__section">
-                <h3 class="main__h3">Menu</h3>
-                <div class="main__content">
+                <h2 class="main__h3">MENU</h2>
+                <div class="main__content main__content--green">
                     <h4 class="main__h4">Primeros platos</h4>
                     <ul class="main__ul">
-                        <li class="main__li">Ensalada cesar</li>
-                        <li class="main__li">Frijoles puercos</li>
-                        <li class="main__li">Coctel de camarón</li>
+                        <li class="main__li">Ensalada cesar.</li>
+                        <li class="main__li">Frijoles puercos.</li>
+                        <li class="main__li">Coctel de camarón.</li>
                     </ul>
                 </div>
-                <div class="main__content">
+                <div class="main__content  main__content--white">
                     <h4 class="main__h4">Segundos platos</h4>
                     <ul class="main__ul">
-                        <li class="main__li">Quesadilla</li>
-                        <li class="main__li">Burrito de carne</li>
-                        <li class="main__li">Taco de cochinita pibil</li>
-                        <li class="main__li">Taco tinga de pollo</li>
+                        <li class="main__li">Quesadilla.</li>
+                        <li class="main__li">Burrito de carne.</li>
+                        <li class="main__li">Taco de cochinita pibil.</li>
+                        <li class="main__li">Taco tinga de pollo.</li>
                     </ul>
                 </div>
-                <div class="main__content">
+                <div class="main__content  main__content--red">
                     <h4 class="main__h4">Postres</h4>
                     <ul class="main__ul">
-                        <li class="main__li">Púding</li>
-                        <li class="main__li">Tiramisú</li>
-                        <li class="main__li">Lionesas con nata y chocolate negro</li>
-                        <li class="main__li">Músic</li>
+                        <li class="main__li">Púding.</li>
+                        <li class="main__li">Tiramisú.</li>
+                        <li class="main__li">Lionesas con nata y chocolate negro.</li>
+                        <li class="main__li">Músic.</li>
                     </ul>
+                    <p class="main__p">Precio: 25€</p>
                 </div>
-                <p class="main__p">Precio: 25€</p>
             </section>
             <!--Carta-->
             <section class="main__section">
-                <table id="carta" class="main__table">
-                    <thead class="main__thead">
-                        <tr class="main__tr">
-                            <th class="main__th" colspan="4">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4">
                                 CARTA
                             </th>
                         </tr>
-                        <tr class="main__tr">
-                            <th class="main__th">Platos entrantes</th>
-                            <th class="main__th">Tacos</th>
-                            <th class="main__th">Burritos</th>
-                            <th class="main__th">Postres</th>
+                        <tr>
+                            <th>Platos entrantes</th>
+                            <th>Tacos</th>
+                            <th>Burritos</th>
+                            <th>Postres</th>
                         </tr>
                     </thead>
-                    <tbody class="main__tbody">
-                        <tr class="main__tr">
-                            <td class="main__td">Ensalada cesar</td>
-                            <td class="main__td">Carnitas</td>
-                            <td class="main__td">Vegetal</td>
-                            <td class="main__td">Nachos dulces</td>
+                    <tbody>
+                        <tr>
+                            <td>Ensalada cesar</td>
+                            <td>Carnitas</td>
+                            <td>Vegetal</td>
+                            <td>Nachos dulces</td>
                         </tr>
-                        <tr class="main__tr">
-                            <td class="main__td">Frijoles con puerco</td>
-                            <td class="main__td">Cochinita pibil</td>
-                            <td class="main__td">Pollo</td>
-                            <td class="main__td">Crepes</td>
+                        <tr>
+                            <td>Frijoles con puerco</td>
+                            <td>Cochinita pibil</td>
+                            <td>Pollo</td>
+                            <td>Crepes</td>
                         </tr>
-                        <tr class="main__tr">
-                            <td class="main__td">Ensalada de la casa</td>
-                            <td class="main__td">Tinga de pollo</td>
-                            <td class="main__td">Ternera</td>
-                            <td class="main__td">Tarta de queso</td>
+                        <tr>
+                            <td>Ensalada de la casa</td>
+                            <td>Tinga de pollo</td>
+                            <td>Ternera</td>
+                            <td>Tarta de queso</td>
                         </tr>
-                        <tr class="main__tr">
-                            <td class="main__td">Nachos</td>
-                            <td class="main__td">Flautas</td>
-                            <td class="main__td">Mixto</td>
-                            <td class="main__td">Muerte por chocolate</td>
+                        <tr>
+                            <td>Nachos</td>
+                            <td>Flautas</td>
+                            <td>Mixto</td>
+                            <td>Muerte por chocolate</td>
                         </tr>
                     </tbody>
                 </table>
@@ -119,16 +124,28 @@
 
     <footer class="footer">
         <!-- mapa -->
-        <!-- <div class="footer__content">
-            <iframe class="footer__iframe"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47905.8125513391!2d2.1088718588378375!3d41.3716234074086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a499f318695789%3A0xe63c457ea2375e4e!2sJacqueline&#39;s%20Restaurant%20by%20TMC!5e0!3m2!1sca!2ses!4v1606218060984!5m2!1sca!2ses"
-                width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div> -->
-        <!-- redes sociales -->
-        <div class="footer__content">
-            <a class="footer_a" href="https://www.facebook.com/" target="_blanc"><i class="fab fa-facebook"></i></a>
-            <a class="footer_a" href="https://www.pinterest.es/" target="_blanc"><i class="fab fa-pinterest"></i></a>
-            <a class="footer_a" href="https://twitter.com/?lang=es" target="_blanc"><i class="fab fa-twitter"></i></a>
+        <div>
+            <h2 class="footer__h2">CONTACTO</h2>
+        </div>
+        <div class="footer__contentRow">
+            <div class="footer__content footer__content--responsiveMap">
+                <iframe class="footer__iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.777385918441!2d-100.26759188566221!3d25.678673218300776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662912db4a6348b%3A0x2f69018ea6e2d4e5!2sFood%20Trucks%20de%20M%C3%A9xico!5e0!3m2!1ses!2ses!4v1606684487195!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                </iframe>
+            </div>
+            <!-- redes sociales -->
+            <div class="footer__content">
+                <p class="footer__p">Telefono: 667320036</p>
+                <div>
+                    <a class="footer_a" href="https://www.facebook.com/" target="_blanc"><i
+                            class="fab fa-facebook"></i></a>
+                    <a class="footer_a" href="https://www.pinterest.es/" target="_blanc"><i
+                            class="fab fa-pinterest"></i></a>
+                    <a class="footer_a" href="https://twitter.com/?lang=es" target="_blanc"><i
+                            class="fab fa-twitter"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

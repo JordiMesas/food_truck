@@ -1,0 +1,74 @@
+@import './variables.scss';
+@import './mixins';
+%format-padding-layout {
+	padding: 35px 0;
+}
+.main {
+	background-color: #ffdd003a;
+	.main__section {
+		@extend %format-padding-layout;
+		.main__h2,
+		.main__h3 {
+			text-align: center;
+			@extend %format-padding-layout;
+		}
+		.main__img {
+			margin-top: 15px;
+		}
+		.main__h4 {
+			@extend %format-padding-layout;
+		}
+		.main__content {
+			width: $width100;
+			padding: 5.8%;
+			.main__li {
+				line-height: 30px;
+			}
+			.main__p {
+				text-align: $center;
+			}
+		}
+		.main__content--green {
+			background-color: #006847;
+		}
+		.main__content--white {
+			background-color: #fefefe;
+		}
+		.main__content--red {
+			background-color: #ce1126;
+		}
+		
+
+		table {			
+			border-collapse: collapse;
+			border-spacing: 0;
+			width: 90%;
+			border: 1px solid #ddd;
+			font-size: 0.79em;
+			@media (min-width: 768px) {
+				font-size: 1em;
+			}
+			margin: auto;
+			th,
+			td {
+				text-align: left;
+				padding: 8px;
+            }
+            thead{
+                background-color: $color-yellow;
+                tr:nth-of-type(1){
+                    th:nth-of-type(1){
+                        text-align: $center;
+                        font-size: 1.2em;
+                    }
+                }
+            }
+            tbody{                
+                background-color: #f2f2f2;                
+            }
+
+		}
+
+		
+	}
+}
