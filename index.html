@@ -25,9 +25,9 @@
             <img class="nav__img" src="src/img/logo.png" alt="">
             <ul class="nav__ul">
                 <li class="nav__li"><a class="nav__a" href="#">Inicio</a></li>
-                <li class="nav__li"><a class="nav__a" href="#">Menu</a></li>
-                <li class="nav__li"><a class="nav__a" href="#">Carta</a></li>
-                <li class="nav__li"><a class="nav__a" href="#">Contacto</a></li>
+                <li class="nav__li"><a class="nav__a" href="#menu">Menu</a></li>
+                <li class="nav__li"><a class="nav__a" href="#carte">Carta</a></li>
+                <li class="nav__li"><a class="nav__a" href="#contact">Contacto</a></li>
             </ul>
         </div>
         <div class="nav__hamburguerWhite">
@@ -40,13 +40,20 @@
     <main class="main">
         <!-- Slider picture -->
         <div class="main__content">
-            <section class="main__section">
+            <section class="main__section main__section--centerImg">
                 <h2 class="main__h2">GALERIA DE FOTOS</h2>
-                <img class="main__img" src="./src/img/camaron.png" alt="">
+                <img class="main__img" src="./src/img/galery_0.png" alt="galery">
+                <div id="buttons">
+                    <div class="main__button" name="0"></div> 
+                    <div class="main__button" name="1"></div> 
+                    <div class="main__button" name="2"></div> 
+                    <div class="main__button" name="3"></div> 
+                    <div class="main__button" name="4"></div> 
+                </div>
             </section>
             <!--Menu-->
-            <section class="main__section">
-                <h2 class="main__h3">MENU</h2>
+            <section  class="main__section">
+                <h2 id="menu" class="main__h3">MENU</h2>
                 <div class="main__content main__content--green">
                     <h4 class="main__h4">Primeros platos</h4>
                     <ul class="main__ul">
@@ -76,8 +83,8 @@
                 </div>
             </section>
             <!--Carta-->
-            <section class="main__section">
-                <table>
+            <section  class="main__section">
+                <table id="carte">
                     <thead>
                         <tr>
                             <th colspan="4">
@@ -125,7 +132,7 @@
     <footer class="footer">
         <!-- mapa -->
         <div>
-            <h2 class="footer__h2">CONTACTO</h2>
+            <h2 id="contact" class="footer__h2">CONTACTO</h2>
         </div>
         <div class="footer__contentRow">
             <div class="footer__content footer__content--responsiveMap">
@@ -148,6 +155,7 @@
             </div>
         </div>
     </footer>
+    +<script src="./src/js/slider.js"></script>
 </body>
 
 </html>
