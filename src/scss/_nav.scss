@@ -21,9 +21,9 @@
             @include modelFlexRow;
             .nav__a{
                 color:  $color-yellow;                
-                &:hover{
+                &:focus,&:hover{
                    border-bottom: 4px solid $color-yellow;
-                }
+                }               
             }
         }
     }

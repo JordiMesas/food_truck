@@ -1,8 +1,10 @@
 @import './variables.scss';
 @import './mixins';
+
 %format-padding-layout {
 	padding: 35px 0;
 }
+
 .main {
 	background-color: #ffdd003a;
 	.main__section {
@@ -15,6 +17,7 @@
 		.main__img {
 			margin-top: 15px;
 		}
+
 		.main__h4 {
 			@extend %format-padding-layout;
 		}
@@ -29,17 +32,16 @@
 			}
 		}
 		.main__content--green {
-			background-color: #006847;
+			background-color: #00684750;
 		}
 		.main__content--white {
 			background-color: #fefefe;
 		}
 		.main__content--red {
-			background-color: #ce1126;
+			background-color: #ce112756;
 		}
-		
 
-		table {			
+		table {
 			border-collapse: collapse;
 			border-spacing: 0;
 			width: 90%;
@@ -53,22 +55,40 @@
 			td {
 				text-align: left;
 				padding: 8px;
-            }
-            thead{
-                background-color: $color-yellow;
-                tr:nth-of-type(1){
-                    th:nth-of-type(1){
-                        text-align: $center;
-                        font-size: 1.2em;
-                    }
-                }
-            }
-            tbody{                
-                background-color: #f2f2f2;                
-            }
-
+			}
+			thead {
+				background-color: $color-yellow;
+				tr:nth-of-type(1) {
+					th:nth-of-type(1) {
+						text-align: $center;
+						font-size: 1.2em;
+					}
+				}
+			}
+			tbody {
+				background-color: #f2f2f2;
+			}
 		}
-
-		
+	}
+	.main__section--centerImg {
+		@media (min-width: 1024px) {
+			width: 56%;
+			margin: auto;
+		}
+		div {
+			width: 21.7%;
+			margin: auto;
+			.main__button {	
+				@include cursor;
+				// background-color: #717171;				
+				background-color: #bbb;								
+				height: 15px;
+				width: 15px;
+				margin: 0 2px;
+				border-radius: 50%;
+				display: inline-block;
+				transition: background-color 0.6s ease;				
+			}
+		}
 	}
 }

@@ -28,13 +28,13 @@
 				bottom: 0;
 				right: 0;
 				width: 100%;
-				height: 80%;
+				height: 90%;
 			}
 			.footer__p {
                 color: $color-white;
                 @extend %format-padding-layout;                
 			}
-			i {
+			i {				
 				color: $color-white;
 				@include socialNet;
 
