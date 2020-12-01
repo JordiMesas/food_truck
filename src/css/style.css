@@ -146,7 +146,7 @@ body img {
   height: 3px;
 }
 
-.footer .footer__contentRow .footer__content .footer__p, .footer .footer__h2, .main .main__section .main__h4, .main .main__section .main__h2,
+.footer .footer__contentRow .footer__content .footer__p, .footer .footer__h2, .main .main__section .main__h2,
 .main .main__section .main__h3, .main .main__section {
   padding: 35px 0;
 }
@@ -166,12 +166,35 @@ body img {
 .main .main__section .main__img {
   margin-top: 15px;
 }
+.main .main__section .main__h4 {
+  margin-bottom: 35px;
+}
 .main .main__section .main__content {
   width: 100%;
   padding: 5.8%;
 }
 .main .main__section .main__content .main__li {
   line-height: 30px;
+}
+.main .main__section .main__content div {
+  height: 40vh;
+}
+.main .main__section .main__content img {
+  width: 45%;
+  display: none;
+}
+@media (min-width: 768px) {
+  .main .main__section .main__content img {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .main .main__section .main__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .main .main__section .main__content--green {
   background-color: #00684750;

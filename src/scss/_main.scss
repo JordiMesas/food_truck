@@ -25,15 +25,28 @@
 		.main__img {
 			margin-top: 15px;
 		}
-
 		.main__h4 {			
-			@extend %format-padding-layout;
+			margin-bottom: 35px;
 		}
 		.main__content {			
 			width: $width100;
 			padding: 5.8%;
+			
 			.main__li {
 				line-height: 30px;
+			}
+			div{
+				height: 40vh;
+			}
+			img{
+				width: 45%;
+				display: none;
+				@media (min-width: 768px){
+					display: block;
+				}
+			}
+			@media (min-width: 768px) { 
+				@include modelFlexRow;
 			}			
 		}
 		.main__p {			

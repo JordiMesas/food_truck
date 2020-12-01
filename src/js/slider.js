@@ -6,9 +6,9 @@ for (let i = 0; i < buttons.length; i++) {
     
     buttons[i].addEventListener('click', (e) => {
         
-        let buttons = document.getElementsByClassName('main__button');
-        for (let i = 0; i < buttons.length; i++) {
-            buttons[i].style.backgroundColor = '#bbb';            
+        let buttonsInitial = document.getElementsByClassName('main__button');
+        for (let i = 0; i < buttonsInitial.length; i++) {
+            buttonsInitial[i].style.backgroundColor = '#bbb';            
         }       
 		e.target.style.backgroundColor = '#717171';
 		let number = e.target.getAttribute('name');
