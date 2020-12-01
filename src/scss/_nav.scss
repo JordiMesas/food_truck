@@ -1,8 +1,8 @@
-@import './variables.scss';
+@import './variables';
 @import './mixins';
 
 .nav {	
-    background-color: black;
+    background-color: $color-black;
     display: $flex;  
     justify-content: $center;  
 	.nav__content {

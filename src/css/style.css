@@ -151,12 +151,17 @@ body img {
   padding: 35px 0;
 }
 
-.main {
-  background-color: #ffdd003a;
-}
-.main .main__section .main__h2,
+.main .main__section table thead tr:nth-of-type(1) th:nth-of-type(1), .main .main__section .main__p, .main .main__section .main__h2,
 .main .main__section .main__h3 {
   text-align: center;
+}
+
+.main .main__section--centerImg, .main .main__section table {
+  margin: auto;
+}
+
+.main {
+  background-color: #ffdd003a;
 }
 .main .main__section .main__img {
   margin-top: 15px;
@@ -167,9 +172,6 @@ body img {
 }
 .main .main__section .main__content .main__li {
   line-height: 30px;
-}
-.main .main__section .main__content .main__p {
-  text-align: center;
 }
 .main .main__section .main__content--green {
   background-color: #00684750;
@@ -185,8 +187,7 @@ body img {
   border-spacing: 0;
   width: 90%;
   border: 1px solid #ddd;
-  font-size: 0.79em;
-  margin: auto;
+  font-size: 0.77em;
 }
 @media (min-width: 768px) {
   .main .main__section table {
@@ -202,7 +203,6 @@ body img {
   background-color: #FFDE00;
 }
 .main .main__section table thead tr:nth-of-type(1) th:nth-of-type(1) {
-  text-align: center;
   font-size: 1.2em;
 }
 .main .main__section table tbody {
@@ -211,12 +211,12 @@ body img {
 @media (min-width: 1024px) {
   .main .main__section--centerImg {
     width: 56%;
-    margin: auto;
   }
 }
 .main .main__section--centerImg div {
-  width: 21.7%;
-  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .main .main__section--centerImg div .main__button {
   cursor: pointer;

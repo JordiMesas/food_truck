@@ -1,8 +1,16 @@
-@import './variables.scss';
+@import './variables';
 @import './mixins';
 
 %format-padding-layout {
 	padding: 35px 0;
+}
+
+%text-center{
+	text-align: $center;
+}
+
+%format-layout-center-auto{
+	margin: auto;
 }
 
 .main {
@@ -11,25 +19,25 @@
 		@extend %format-padding-layout;
 		.main__h2,
 		.main__h3 {
-			text-align: center;
+			@extend %text-center;
 			@extend %format-padding-layout;
 		}
 		.main__img {
 			margin-top: 15px;
 		}
 
-		.main__h4 {
+		.main__h4 {			
 			@extend %format-padding-layout;
 		}
-		.main__content {
+		.main__content {			
 			width: $width100;
 			padding: 5.8%;
 			.main__li {
 				line-height: 30px;
-			}
-			.main__p {
-				text-align: $center;
-			}
+			}			
+		}
+		.main__p {			
+			@extend %text-center;
 		}
 		.main__content--green {
 			background-color: #00684750;
@@ -46,11 +54,11 @@
 			border-spacing: 0;
 			width: 90%;
 			border: 1px solid #ddd;
-			font-size: 0.79em;
+			font-size: 0.77em;
 			@media (min-width: 768px) {
 				font-size: 1em;
 			}
-			margin: auto;
+			@extend %format-layout-center-auto;
 			th,
 			td {
 				text-align: left;
@@ -60,7 +68,7 @@
 				background-color: $color-yellow;
 				tr:nth-of-type(1) {
 					th:nth-of-type(1) {
-						text-align: $center;
+						@extend %text-center;
 						font-size: 1.2em;
 					}
 				}
@@ -69,25 +77,26 @@
 				background-color: #f2f2f2;
 			}
 		}
-	}
+	}	
 	.main__section--centerImg {
+		@extend %format-layout-center-auto;
 		@media (min-width: 1024px) {
-			width: 56%;
-			margin: auto;
+			width: 56%;			
 		}
-		div {
-			width: 21.7%;
-			margin: auto;
-			.main__button {	
+		div {			
+			width: 100%;
+			display: $flex;
+			justify-content: $center;
+			.main__button {
 				@include cursor;
-				// background-color: #717171;				
-				background-color: #bbb;								
+				// background-color: #717171;
+				background-color: #bbb;
 				height: 15px;
 				width: 15px;
 				margin: 0 2px;
 				border-radius: 50%;
 				display: inline-block;
-				transition: background-color 0.6s ease;				
+				transition: background-color 0.6s ease;
 			}
 		}
 	}
