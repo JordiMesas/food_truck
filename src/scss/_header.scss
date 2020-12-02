@@ -18,7 +18,7 @@
 		background-position: top $center;
 	}	
 
-	.header__content {
+	.header__content {		
 		height: 33vh;		
 		@include modelFlexColumn;
 		.header__backgroundColor{
@@ -32,15 +32,16 @@
 		}
 		.header__a {
 			padding: 20px 25px;
-			background-color: $color-yellow ;
-			border: 5px solid $color-black;						
+			margin: 20px;
+			background-image: url('../img/wood.png');
+			background-repeat: no-repeat;
+			background-position: $center $center;
+			background-size: cover;									
 			color: $color-white;
 			font-size: 1.5em;
 			border-radius: $border-radius;
 			
-			&:hover {
-				border: 5px solid $color-yellow ;
-				background-color: transparent;
+			&:hover {				
 				color: $color-yellow ;
 			}			
 		}

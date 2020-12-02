@@ -5,11 +5,11 @@
 	padding: 35px 0;
 }
 
-%text-center{
+%text-center {
 	text-align: $center;
 }
 
-%format-layout-center-auto{
+%format-layout-center-auto {
 	margin: auto;
 }
 
@@ -25,31 +25,31 @@
 		.main__img {
 			margin-top: 15px;
 		}
-		.main__h4 {			
+		.main__h4 {
 			margin-bottom: 35px;
 		}
-		.main__content {			
+		.main__content {
 			width: $width100;
 			padding: 5.8%;
-			
+
 			.main__li {
 				line-height: 30px;
 			}
-			div{
+			div {
 				height: 40vh;
 			}
-			img{
+			img {
 				width: 45%;
 				display: none;
-				@media (min-width: 768px){
+				@media (min-width: 768px) {
 					display: block;
 				}
 			}
-			@media (min-width: 768px) { 
+			@media (min-width: 768px) {
 				@include modelFlexRow;
-			}			
+			}
 		}
-		.main__p {			
+		.main__p {
 			@extend %text-center;
 		}
 		.main__content--green {
@@ -90,23 +90,40 @@
 				background-color: #f2f2f2;
 			}
 		}
-	}	
+	}
 	.main__section--centerImg {
 		@extend %format-layout-center-auto;
+		width: 80%;
 		@media (min-width: 1024px) {
-			width: 56%;			
+			width: 56%;
 		}
-		div {			
+		.main_div {
 			width: 100%;
 			display: $flex;
 			justify-content: $center;
+			align-items: $center;
+			&:nth-of-type(1) > div {				
+				color: #bbb;
+				margin: 4px;
+				padding: 4px;
+				transform: scale(1.5);
+				@media (min-width: 1024px) {
+					transform: scale(2);
+				}
+				border-radius: $border-radius;
+				@include cursor;
+				&:hover {
+					color: $color-black;
+					background-color: rgba(187, 187, 187, 0.192);
+				}
+			}
 			.main__button {
 				@include cursor;
 				// background-color: #717171;
 				background-color: #bbb;
 				height: 15px;
 				width: 15px;
-				margin: 0 2px;
+				margin: 10px;
 				border-radius: 50%;
 				display: inline-block;
 				transition: background-color 0.6s ease;

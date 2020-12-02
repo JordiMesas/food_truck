@@ -77,15 +77,16 @@ body img {
 }
 .header .header__content .header__a {
   padding: 20px 25px;
-  background-color: #FFDE00;
-  border: 5px solid black;
+  margin: 20px;
+  background-image: url("../img/wood.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   color: white;
   font-size: 1.5em;
   border-radius: 5px;
 }
 .header .header__content .header__a:hover {
-  border: 5px solid #FFDE00;
-  background-color: transparent;
   color: #FFDE00;
 }
 
@@ -231,22 +232,43 @@ body img {
 .main .main__section table tbody {
   background-color: #f2f2f2;
 }
+.main .main__section--centerImg {
+  width: 80%;
+}
 @media (min-width: 1024px) {
   .main .main__section--centerImg {
     width: 56%;
   }
 }
-.main .main__section--centerImg div {
+.main .main__section--centerImg .main_div {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.main .main__section--centerImg div .main__button {
+.main .main__section--centerImg .main_div:nth-of-type(1) > div {
+  color: #bbb;
+  margin: 4px;
+  padding: 4px;
+  transform: scale(1.5);
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .main .main__section--centerImg .main_div:nth-of-type(1) > div {
+    transform: scale(2);
+  }
+}
+.main .main__section--centerImg .main_div:nth-of-type(1) > div:hover {
+  color: black;
+  background-color: rgba(187, 187, 187, 0.192);
+}
+.main .main__section--centerImg .main_div .main__button {
   cursor: pointer;
   background-color: #bbb;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 10px;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
