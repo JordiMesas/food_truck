@@ -114,11 +114,10 @@
 				@include cursor;
 				&:hover {
 					color: $color-black;
-					background-color: rgba(187, 187, 187, 0.192);
+					background-color: rgba(187, 187, 187, 0.308);
 				}
 			}
-			.main__button {
-				@include cursor;
+			.main__button {				
 				// background-color: #717171;
 				background-color: #bbb;
 				height: 15px;

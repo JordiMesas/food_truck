@@ -261,10 +261,9 @@ body img {
 }
 .main .main__section--centerImg .main_div:nth-of-type(1) > div:hover {
   color: black;
-  background-color: rgba(187, 187, 187, 0.192);
+  background-color: rgba(187, 187, 187, 0.308);
 }
 .main .main__section--centerImg .main_div .main__button {
-  cursor: pointer;
   background-color: #bbb;
   height: 15px;
   width: 15px;
