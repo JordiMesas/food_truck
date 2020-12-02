@@ -7,7 +7,10 @@ buttons = document.getElementsByClassName('main__button');
 // 	});
 // }
 
-i=2;
+i=0;
+window.addEventListener('load', ()=>{
+	changeImg(i);
+})
 
 document.getElementById('left').addEventListener('click', () => {
 	i--;
@@ -36,3 +39,4 @@ const changeImg = (i) => {
 		'main__img'
 	)[0].src = `./src/img/galery_${i}.png`;
 };
+
