@@ -7,7 +7,7 @@ buttons = document.getElementsByClassName('main__button');
 // 	});
 // }
 
-i=0;
+i=2;
 window.addEventListener('load', ()=>{
 	changeImg(i);
 })

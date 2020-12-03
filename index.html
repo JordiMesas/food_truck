@@ -11,7 +11,7 @@
 
 <body>
     <header class="header">
-        <!-- background-->
+        <!-- background-->        
         <div class="header__content">
             <div class="header__backgroundColor header__backgroundColor--color">
                 <h1 class="header__h1">FOOD TRUCK MEXICANO</h1>
@@ -20,14 +20,23 @@
             <a class="header__a" href="#carte">Carta</a>
         </div>
     </header>
-    <nav class="nav">
+    <nav class="nav">       
         <div class="nav__hamburguerWhite">
             <div></div>
             <div></div>
             <div></div>
         </div>
-        <div class="nav__content">
-            <img class="nav__img" src="src/img/logo.png" alt="">
+        <div class="nav__content nav__content--modal">
+            <div id="close">&#10005;</div>
+            <ul class="nav__ul">
+                <li class="nav__li"><a class="nav__a" href="#">Inicio</a></li>
+                <li class="nav__li"><a class="nav__a" href="#menu">Menu</a></li>
+                <li class="nav__li"><a class="nav__a" href="#carte">Carta</a></li>
+                <li class="nav__li"><a class="nav__a" href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="nav__content nav__content--nav">
+            <img class="nav__img" src="src/img/logo.png" alt="logo">
             <ul class="nav__ul">
                 <li class="nav__li"><a class="nav__a" href="#">Inicio</a></li>
                 <li class="nav__li"><a class="nav__a" href="#menu">Menu</a></li>
@@ -99,7 +108,7 @@
             </section>
             <!--Carta-->
             <section class="main__section main__section--backgroundCarte">
-                <h2 id="menu" class="main__h2 main__h2--background">CARTA</h2>               
+                <h2 id="carte" class="main__h2 main__h2--background">CARTA</h2>               
                 <div class="main__content main__content--backgroundOpacity">
                     <div class="main__div">
                         <h4 class="main__h4">Entrantes</h4>
@@ -224,7 +233,8 @@
             <!-- redes sociales -->
             <div class="footer__content">
                 <p class="footer__p">Telefono: 667320036</p>
-                <div>
+                <p class="footer__p">Horario: 11h-23h todos los dias</p>
+                <div>                    
                     <a class="footer_a" href="https://www.facebook.com/" target="_blanc"><i
                             class="fab fa-facebook"></i></a>
                     <a class="footer_a" href="https://www.pinterest.es/" target="_blanc"><i
@@ -236,6 +246,7 @@
         </div>
     </footer>
     <script src="./src/js/slider.js"></script>
+    <script src="./src/js/hamburguer.js"></script>
 </body>
 
 </html>
