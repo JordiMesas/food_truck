@@ -1,16 +1,6 @@
 buttons = document.getElementsByClassName('main__button');
 
-// for (let i = 0; i < buttons.length; i++) {
-// 	buttons[i].addEventListener('click', (e) => {
-// 		number = e.target.getAttribute('name');
-// 		changeImg(number);
-// 	});
-// }
-
 i=2;
-window.addEventListener('load', ()=>{
-	changeImg(i);
-})
 
 document.getElementById('left').addEventListener('click', () => {
 	i--;
