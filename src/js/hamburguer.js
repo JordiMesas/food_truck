@@ -2,9 +2,9 @@
 let modal = document.getElementsByClassName(" nav__content--modal")[0];
 let hamburguer = document.getElementsByClassName('nav__hamburguerWhite')[0];
 document.getElementsByClassName('nav__hamburguerWhite')[0].addEventListener('click', ()=>{
-    console.log('hola');
-    modal.style.display = 'block';
-    hamburguer.style.display = 'none';
+    console.log('hola');   
+    modal.style.display = 'block';    
+    hamburguer.style.transform = 'translateY(-500px)'; 
     modal.animate([
         // keyframes
         {transform: 'translateY(-500px)'},                 
@@ -17,7 +17,6 @@ document.getElementsByClassName('nav__hamburguerWhite')[0].addEventListener('cli
 });
 
 document.getElementById('close').addEventListener('click', ()=>{
-    hamburguer.style.display = 'block';
-    modal.style.display = 'none';
-    window.location.reload();
+    modal.style.display = 'none';    
+    hamburguer.style.transform = 'translateY(0px)';  
 });
