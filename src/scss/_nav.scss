@@ -4,58 +4,60 @@
 .nav {	
     background-color: $color-black;
     display: $flex;  
-    justify-content: $center;  
+    justify-content: $center;
+    .nav__content{
+        .nav__a{
+            color: $color-yellow;
+            &:focus,&:hover{
+                border-bottom: 4px solid $color-yellow;
+             } 
+        }
+    }
+    //modal
     .nav__content--modal{
         background-color: $color-black;             
-        width: 100%;
+        width: $width100;
         height: 60vh;
-        z-index: 1;
-        color: white;
-                    
+        z-index: 1;                    
         div{
+            color: $color-yellow;
             padding: 20px;
            text-align: end;
-           @include cursor;
-           &:hover{
-               font-weight: $bold;
-         } 
+           @include cursor;           
         }
         .nav__ul{
             text-align: $center;            
             .nav__li{
                 line-height: 50px;
-            }          
-            .nav__a{
-                color: $color-yellow;
-                &:focus,&:hover{
-                    border-bottom: 4px solid $color-yellow;
-                 } 
-            }
+            }         
+            
         }
-        display: none;
-        
+        @include display_none;       
     }
-	.nav__content--nav {
-        display: none;        
-        @media (min-width: 768px) {
-            display: block;            
-            @include modelFlexRow;            	
-        }
-		margin: 0 3%;
-        .nav__img{
-            width: 7.5%;
-        }
-        .nav__ul {
-            width: 70%;
+    //nav
+	.nav__content--nav {             
+        @include display_none;         
+        @media (min-width: 768px) {            
+            @include display_block;            
             @include modelFlexRow;
-            .nav__a{
-                color:  $color-yellow;                
-                &:focus,&:hover{
-                   border-bottom: 4px solid $color-yellow;
-                }               
+            padding: 20px 0;                     	
+            
+            .nav__img{
+                width: 10%;
+            }
+            .nav__ul {
+                width: 70%;
+                @include modelFlexRow;
+                .nav__a{
+                    color:  $color-yellow;                
+                    &:focus,&:hover{
+                       border-bottom: 4px solid $color-yellow;
+                    }               
+                }
             }
         }
     }
+    //hamburguer
     .nav__hamburguerWhite{               
         margin: 4% 0;
         @include hideMin1024px;

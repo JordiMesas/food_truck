@@ -71,3 +71,11 @@
 	font-size: 1.3em;
 	padding-left: 10px;	
 }
+
+@mixin display_block{
+	display: block;
+}
+
+@mixin display_none{
+	display: none;
+}

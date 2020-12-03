@@ -1,6 +1,7 @@
 @import './variables';
 @import './mixins';
 
+// codigo que se va a repetir
 %format-padding-layout {
 	padding: 30px 0;
 }
@@ -15,6 +16,7 @@
 
 .main {
 	background-color: #ffdd003a;
+	//menu y carta
 	.main__section {
 		@extend %format-padding-layout;
 
@@ -46,9 +48,9 @@
 			}
 			img {
 				width: 45%;
-				display: none;
+				@include display_none; 
 				@media (min-width: 768px) {
-					display: block;
+					@include display_block;  
 				}
 			}
 			@media (min-width: 768px) {
@@ -69,6 +71,7 @@
 		.main__content--red {
 			background-color: #ce112756;
 		}
+		//carta
 		.main__content--backgroundOpacity{			
 			width: 80%;
 			background-color: black;
@@ -126,6 +129,7 @@
 			}
 		}
 	}
+	//carta
 	.main__section--backgroundCarte {		
 		padding: initial;
 		background-image: url('../img/carte.png');
