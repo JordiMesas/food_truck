@@ -81,7 +81,7 @@ body img {
   background-image: url("../img/wood.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: content;
   color: white;
   font-size: 1.5em;
   border-radius: 5px;
@@ -147,22 +147,24 @@ body img {
   height: 3px;
 }
 
-.footer .footer__contentRow .footer__content .footer__p, .footer .footer__h2, .main .main__section .main__h2,
-.main .main__section .main__h3, .main .main__section {
-  padding: 35px 0;
+.footer .footer__contentRow .footer__content .footer__p, .footer .footer__h2, .main .main__section .main__content--backgroundOpacity, .main .main__section .main__h2, .main .main__section {
+  padding: 30px 0;
 }
 
-.main .main__section table thead tr:nth-of-type(1) th:nth-of-type(1), .main .main__section .main__p, .main .main__section .main__h2,
-.main .main__section .main__h3 {
+.main .main__section .main__p, .main .main__section .main__h2 {
   text-align: center;
 }
 
-.main .main__section--centerImg, .main .main__section table {
+.main .main__section--centerImg, .main .main__section .main__content--backgroundOpacity .main__div, .main .main__section .main__content--backgroundOpacity {
   margin: auto;
 }
 
 .main {
   background-color: #ffdd003a;
+}
+.main .main__section .main__h2--background {
+  background-color: white;
+  border: 1px solid #afcb9d;
 }
 .main .main__section .main__img {
   margin-top: 15px;
@@ -172,10 +174,12 @@ body img {
 }
 .main .main__section .main__content {
   width: 100%;
-  padding: 5.8%;
+  padding: 35px;
 }
 .main .main__section .main__content .main__li {
+  padding-left: 10px;
   line-height: 30px;
+  align-self: flex-end;
 }
 .main .main__section .main__content div {
   height: 40vh;
@@ -197,6 +201,9 @@ body img {
     align-items: center;
   }
 }
+.main .main__section .main__p {
+  padding: 10px;
+}
 .main .main__section .main__content--green {
   background-color: #00684750;
 }
@@ -206,31 +213,24 @@ body img {
 .main .main__section .main__content--red {
   background-color: #ce112756;
 }
-.main .main__section table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 90%;
-  border: 1px solid #ddd;
-  font-size: 0.77em;
+.main .main__section .main__content--backgroundOpacity {
+  width: 80%;
+  background-color: black;
+  opacity: 0.7;
 }
-@media (min-width: 768px) {
-  .main .main__section table {
-    font-size: 1em;
-  }
+.main .main__section .main__content--backgroundOpacity .main__div {
+  width: 80%;
+  height: 100%;
+  color: white;
 }
-.main .main__section table th,
-.main .main__section table td {
-  text-align: left;
-  padding: 8px;
+.main .main__section .main__content--backgroundOpacity .main__div .main__ul--flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-.main .main__section table thead {
-  background-color: #FFDE00;
-}
-.main .main__section table thead tr:nth-of-type(1) th:nth-of-type(1) {
-  font-size: 1.2em;
-}
-.main .main__section table tbody {
-  background-color: #f2f2f2;
+.main .main__section .main__content--backgroundOpacity .main__div .main__h4 {
+  text-decoration: underline;
 }
 .main .main__section--centerImg {
   width: 80%;
@@ -271,6 +271,13 @@ body img {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+.main .main__section--backgroundCarte {
+  padding: initial;
+  background-image: url("../img/carte.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .footer {

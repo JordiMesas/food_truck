@@ -2,7 +2,7 @@
 @import './mixins';
 
 %format-padding-layout {
-	padding: 35px 0;
+	padding: 30px 0;
 }
 
 %text-center {
@@ -17,10 +17,14 @@
 	background-color: #ffdd003a;
 	.main__section {
 		@extend %format-padding-layout;
-		.main__h2,
-		.main__h3 {
+
+		.main__h2 {
 			@extend %text-center;
 			@extend %format-padding-layout;
+		}
+		.main__h2--background {
+			background-color: $color-white;
+			border: 1px solid #afcb9d;
 		}
 		.main__img {
 			margin-top: 15px;
@@ -30,10 +34,12 @@
 		}
 		.main__content {
 			width: $width100;
-			padding: 5.8%;
+			padding: 35px;
 
 			.main__li {
+				padding-left: 10px;
 				line-height: 30px;
+				align-self: flex-end;				
 			}
 			div {
 				height: 40vh;
@@ -48,9 +54,11 @@
 			@media (min-width: 768px) {
 				@include modelFlexRow;
 			}
+			
 		}
 		.main__p {
 			@extend %text-center;
+			padding: 10px;
 		}
 		.main__content--green {
 			background-color: #00684750;
@@ -61,36 +69,27 @@
 		.main__content--red {
 			background-color: #ce112756;
 		}
-
-		table {
-			border-collapse: collapse;
-			border-spacing: 0;
-			width: 90%;
-			border: 1px solid #ddd;
-			font-size: 0.77em;
-			@media (min-width: 768px) {
-				font-size: 1em;
-			}
+		.main__content--backgroundOpacity{			
+			width: 80%;
+			background-color: black;
+			opacity: 0.7;
 			@extend %format-layout-center-auto;
-			th,
-			td {
-				text-align: left;
-				padding: 8px;
-			}
-			thead {
-				background-color: $color-yellow;
-				tr:nth-of-type(1) {
-					th:nth-of-type(1) {
-						@extend %text-center;
-						font-size: 1.2em;
-					}
+			@extend %format-padding-layout;
+			.main__div {
+				width: 80%;
+				height: $width100;			
+				color: $color-white;				
+				@extend %format-layout-center-auto;
+				.main__ul--flex {
+					@include modelFlexRow;
 				}
-			}
-			tbody {
-				background-color: #f2f2f2;
+				.main__h4{
+					text-decoration: underline;
+				}				
 			}
 		}
 	}
+	//slider
 	.main__section--centerImg {
 		@extend %format-layout-center-auto;
 		width: 80%;
@@ -98,11 +97,11 @@
 			width: 56%;
 		}
 		.main_div {
-			width: 100%;
+			width: $width100;
 			display: $flex;
 			justify-content: $center;
 			align-items: $center;
-			&:nth-of-type(1) > div {				
+			&:nth-of-type(1) > div {
 				color: #bbb;
 				margin: 4px;
 				padding: 4px;
@@ -118,7 +117,6 @@
 				}
 			}
 			.main__button {				
-				// background-color: #717171;
 				background-color: #bbb;
 				height: 15px;
 				width: 15px;
@@ -128,5 +126,12 @@
 				transition: background-color 0.6s ease;
 			}
 		}
+	}
+	.main__section--backgroundCarte {		
+		padding: initial;
+		background-image: url('../img/carte.png');
+		background-repeat: no-repeat;
+		background-position: $center $center;
+		background-size: cover;
 	}
 }
