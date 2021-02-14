@@ -1,0 +1,81 @@
+@import './variables';
+////@access public
+////@author @jordi
+
+/// layout cursor
+@mixin cursor() {
+	cursor: $pointer;
+}
+
+/// mixin used to draw a hamburger
+///@group mixin
+@mixin hamburguer {	
+	width: 43px;
+	height: 31px;
+	padding: 3px;
+	display: $flex;
+	flex-direction: $column;
+	justify-content: space-around;
+	@include cursor;
+	border: solid 2px white;
+	border-radius: 3px;
+	div {
+		background-color: white;
+		height: 3px;
+	}
+}
+
+/// Media query
+/// Laptop
+/// responsive size / hide the nav ul
+
+///@group mixin
+@mixin hideMin1024px {
+	@media (min-width: 768px) {
+		display: none;
+	}
+}
+
+/// responsive size / show  the nav ul and modify li
+
+///@group mixin
+@mixin showMin1024px {	  
+	@media (min-width: 1024px) {
+		display: block;
+		width: 56%;
+		display: $flex;
+		justify-content: space-between;
+	}
+}
+
+///Layout model flexbox
+///@group mixin
+@mixin modelFlexRow{	
+	display: $flex;
+	flex-direction: $row;
+	justify-content: $space-between;
+	align-items: $center;	
+}
+
+@mixin modelFlexColumn {
+	display: $flex;
+	flex-direction: $column;
+	justify-content: $space-between;
+	align-items: $center;
+}
+
+///tag i socials net
+/// @group layout
+
+@mixin socialNet {
+	font-size: 1.3em;
+	padding-left: 10px;	
+}
+
+@mixin display_block{
+	display: block;
+}
+
+@mixin display_none{
+	display: none;
+}

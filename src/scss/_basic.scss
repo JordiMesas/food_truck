@@ -1,0 +1,44 @@
+@import './variables.scss';
+@import './mixins';
+// General tags style
+
+//font-family to title
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: $body-size-s;
+    @media (min-width: 768px) {
+        font-size: $body_size_t;
+     }  
+    
+    h1,h2,h3,h4{
+        font-family: 'Lora', serif;
+        font-size: $title-size;                
+    }
+    p,a{
+        font-weight: $bold;              
+    }
+    p,li,a{       
+        font-size: 16px;
+        @media (min-width: 768px) {
+            font-size: 1em;			
+        }
+    }
+    li{
+        list-style: none;        
+    }
+    a{
+        text-decoration: none;        
+    }
+    img{        
+        max-width: $max-width;
+        border-radius: $border-radius;        
+    }
+   
+}

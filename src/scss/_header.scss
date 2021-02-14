@@ -1,0 +1,49 @@
+@import './variables';
+@import './mixins';
+
+.header {
+	background-image: url('../img/background.png');	
+	background-repeat: no-repeat;
+	
+	background-size: 395px;
+	background-attachment: fixed;
+	background-position: $center $center;
+	height: 89vh;
+
+	@media (min-width: 768px) { 
+		background-size: 500px;
+	}
+	@media (min-width: 1024px) { 
+		background-size: 697px;
+		background-position: top $center;
+	}	
+
+	.header__content {		
+		height: 33vh;		
+		@include modelFlexColumn;
+		.header__backgroundColor{
+			width: $width100;
+			text-align: $center;
+			padding: 10px 0;
+		}
+		.header__backgroundColor--color {
+			background-color: $color-black;
+			color: $color-white;
+		}
+		.header__a {
+			padding: 20px 25px;
+			margin: 20px;
+			background-image: url('../img/wood.png');
+			background-repeat: no-repeat;
+			background-position: $center $center;
+			background-size: content;									
+			color: $color-white;
+			font-size: 1.5em;
+			border-radius: $border-radius;
+			
+			&:hover {				
+				color: $color-yellow ;
+			}			
+		}
+	}
+}

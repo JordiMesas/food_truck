@@ -1,0 +1,67 @@
+@import './variables';
+@import './mixins';
+
+.nav {    
+    background-color: $color-black;    
+    display: $flex;  
+    justify-content: $center;
+    .nav__content{
+        .nav__a{
+            color: $color-yellow;
+            &:focus,&:hover{
+                border-bottom: 4px solid $color-yellow;
+             } 
+        }
+    }
+    //modal
+    .nav__content--modal{                  
+        width: $width100;        
+        height: 60vh;
+        z-index: 2;                    
+        div{
+            color: $color-yellow;
+            padding: 20px;
+           text-align: end;
+           @include cursor;           
+        }
+        .nav__ul{
+            text-align: $center;            
+            .nav__li{                
+                line-height: 50px;
+                padding-right: 20px;
+            }         
+            
+        }
+        @include display_none;
+        margin: auto;      
+    }
+    //nav
+	.nav__content--nav {             
+        @include display_none;         
+        @media (min-width: 768px) {            
+            @include display_block;            
+            @include modelFlexRow;
+            padding: 20px 0;                     	
+            
+            .nav__img{
+                width: 10%;
+            }
+            .nav__ul {
+                width: 70%;
+                @include modelFlexRow;
+                .nav__a{
+                    color:  $color-yellow;                
+                    &:focus,&:hover{
+                       border-bottom: 4px solid $color-yellow;
+                    }               
+                }
+            }
+        }
+    }
+    //hamburguer
+    .nav__hamburguerWhite{                       
+        margin: 4% 0;        
+        @include hideMin1024px;
+        @include hamburguer;                 
+    }
+}

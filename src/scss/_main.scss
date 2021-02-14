@@ -1,0 +1,140 @@
+@import './variables';
+@import './mixins';
+
+// codigo que se va a repetir
+%format-padding-layout {
+	padding: 30px 0;
+}
+
+%text-center {
+	text-align: $center;
+}
+
+%format-layout-center-auto {
+	margin: auto;
+}
+
+.main {
+	background-color: #ffdd003a;
+	//menu y carta
+	.main__section {
+		@extend %format-padding-layout;
+
+		.main__h2 {
+			@extend %text-center;
+			@extend %format-padding-layout;
+		}
+		.main__h2--background {
+			background-color: $color-white;
+			border: 1px solid #afcb9d;
+		}
+		.main__img {
+			margin-top: 15px;
+		}
+		.main__h4 {
+			margin-bottom: 35px;
+		}
+		.main__content {
+			width: $width100;
+			padding: 35px;
+
+			.main__li {
+				padding-left: 10px;
+				line-height: 30px;
+				align-self: flex-end;				
+			}
+			div {
+				height: 40vh;
+			}
+			img {
+				width: 45%;
+				@include display_none; 
+				@media (min-width: 768px) {
+					@include display_block;  
+				}
+			}
+			@media (min-width: 768px) {
+				@include modelFlexRow;
+			}
+			
+		}
+		.main__p {
+			@extend %text-center;
+			padding: 10px;
+		}
+		.main__content--green {
+			background-color: #00684750;
+		}
+		.main__content--white {
+			background-color: #fefefe;
+		}
+		.main__content--red {
+			background-color: #ce112756;
+		}
+		//carta
+		.main__content--backgroundOpacity{			
+			width: 80%;
+			background-color: black;
+			opacity: 0.7;
+			@extend %format-layout-center-auto;
+			@extend %format-padding-layout;
+			.main__div {
+				width: 80%;
+				height: $width100;			
+				color: $color-white;				
+				@extend %format-layout-center-auto;
+				.main__ul--flex {
+					@include modelFlexRow;
+				}
+				.main__h4{
+					text-decoration: underline;
+				}				
+			}
+		}
+	}
+	//slider
+	.main__section--centerImg {
+		@extend %format-layout-center-auto;
+		width: 80%;
+		@media (min-width: 1024px) {
+			width: 56%;
+		}
+		.main_div {
+			width: $width100;
+			display: $flex;
+			justify-content: $center;
+			align-items: $center;
+			&:nth-of-type(1) > div {
+				color: #bbb;
+				margin: 4px;
+				padding: 4px;
+				transform: scale(1.5);
+				@media (min-width: 1024px) {
+					transform: scale(2);
+				}
+				border-radius: $border-radius;
+				@include cursor;
+				&:hover {
+					color: $color-black;
+					background-color: rgba(187, 187, 187, 0.308);
+				}
+			}
+			.main__button {				
+				background-color: #bbb;
+				height: 15px;
+				width: 15px;
+				margin: 10px;
+				border-radius: 50%;
+				display: inline-block;				
+			}
+		}
+	}
+	//carta
+	.main__section--backgroundCarte {		
+		padding: initial;
+		background-image: url('../img/carte.png');
+		background-repeat: no-repeat;
+		background-position: $center $center;
+		background-size: cover;
+	}
+}
